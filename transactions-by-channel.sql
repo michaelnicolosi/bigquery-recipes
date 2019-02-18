@@ -4,7 +4,7 @@ SELECT
   sessions,
   pageviews,
   bounces,
-  (( bounces / sessions ) * 100 ) AS bounce_rate,
+  ((bounces / sessions) * 100) AS bounce_rate,
   ROUND((pageviews / sessions), 2) AS pages_per_session,
   ((transactions / sessions) * 100) AS ecommerce_conversion_rate,
   transactions,

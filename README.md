@@ -12,6 +12,6 @@ SELECT
   SUM(totals.timeOnSite) / SUM(totals.visits) AS avg_session_duration_secs,
   ROUND((SUM(totals.bounces) / SUM(totals.visits)) * 100, 2) AS bounce_rate
 FROM
-  `wald-rollup-new.141638435.ga_sessions_20190523`
+  `PROJECT_ID.DATASET.ga_sessions_YYYYMMDD`
   GROUP BY device.language
   ORDER BY sessions DESC
